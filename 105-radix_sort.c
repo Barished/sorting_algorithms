@@ -8,7 +8,6 @@
  * @size: size of data
  * @lsd: Less significant digit
  *
- * Return: No Return
  */
 void csort2(int *array, int **buff, int size, int lsd)
 {

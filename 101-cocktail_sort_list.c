@@ -6,7 +6,6 @@
  * @node: node base to change
  * @list: double link list head
  *
- * Return: No Return
  */
 void _swap(listint_t **node, listint_t **list)
 {
@@ -41,7 +40,6 @@ void _swap(listint_t **node, listint_t **list)
  *
  * @list: head of list to be sortered (Double Linked List)
  *
- * Return: No Return
  */
 void cocktail_sort_list(listint_t **list)
 {
