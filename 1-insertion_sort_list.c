@@ -20,7 +20,7 @@ void insertion_sort_list(listint_t **list)
 		new_swap = curr_swap->next;
 		while (curr_swap->prev != NULL && curr_swap->prev->n > curr_swap->n)
 		{
-			curr_swap->prev->next =curr_swap->next;
+			curr_swap->prev->next = curr_swap->next;
 			if (curr_swap->next != NULL)
 				curr_swap->next->prev = curr_swap->prev;
 			 curr_swap->next = curr_swap->prev;
