@@ -1,6 +1,6 @@
 C - Sorting algorithms & Big O
 
-This is an algorithm-based project in C Programming Language, by Deebom Barisi Shedrack and Mohamed Henry Offor during the Full Stack Software Engineering studies at ALX. Several sorting algorithms are implemented, as well as their corresponding Big O notations.
+This is an algorithm-based project in C Programming Language, by Deebom Barisi Shedrack and Henry Offor during the Full Stack Software Engineering studies at ALX. Several sorting algorithms are implemented, as well as their corresponding Big O notations.
 
 Helper Files 🙌
 print_array.c: C function that prints an array of integers.
@@ -171,4 +171,4 @@ Orders the deck from spades to diamonds and from aces to kings.
 
 Authors
 Deebom Barisi S
-Henry Offor O.
+Henry Offor
