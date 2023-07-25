@@ -9,6 +9,7 @@
  * @dst: destination buffer
  * @size: size of buffers
  *
+ * Return: No Return
  */
 void copy(int *src, int *dst, int size)
 {
@@ -18,7 +19,7 @@ void copy(int *src, int *dst, int size)
 		dst[i] = src[i];
 }
 /**
- * merge - merges two sets of data in ascending order
+ * _merge - merges two sets of data in ascending order
  * but they must already be sorted before hand
  * @array: first set of data
  * @buff: second set of data
@@ -27,8 +28,9 @@ void copy(int *src, int *dst, int size)
  * @minR: lower range of second set of data
  * @maxR: upper range of second set of data
  *
+ * Return: No Return
  */
-void merge(int *array, int *buff, int minL, int maxL, int minR, int maxR)
+void _merge(int *array, int *buff, int minL, int maxL, int minR, int maxR)
 {
 	int i = minL, j = minR, k = minL;
 
@@ -52,6 +54,7 @@ void merge(int *array, int *buff, int minL, int maxL, int minR, int maxR)
  * @r1: start of range
  * @r2: end of range
  *
+ * Return: No Return
  */
 void printcheck(int *array, int r1, int r2)
 {
@@ -74,6 +77,7 @@ void printcheck(int *array, int r1, int r2)
  * @max: max range of data in array
  * @size: size of total data
  *
+ * Return: No Return
  */
 void split(int *array, int *buff, int min, int max, int size)
 {
@@ -107,7 +111,7 @@ void split(int *array, int *buff, int min, int max, int size)
 	printf("[right]: ");
 
 	printcheck(array, minR, maxR);
-	merge(array, buff, minL, maxL, minR, maxR);
+	_merge(array, buff, minL, maxL, minR, maxR);
 	copy(array, buff, size);
 
 	printf("[Done]: ");
@@ -120,6 +124,7 @@ void split(int *array, int *buff, int min, int max, int size)
  * @array: array of data to be sorted
  * @size: size of data
  *
+ * Return: No Return
  */
 void merge_sort(int *array, size_t size)
 {

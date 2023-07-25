@@ -1,13 +1,13 @@
 #include "sort.h"
 
 /**
- * swap - swap one element for another
+ * swap_t - swap one element for another
  * @a: first argument
  * @b: second argument
  * Return: nothing
  */
 
-void swap(int *a, int *b)
+void swap_t(int *a, int *b)
 {
 	int temp;
 
@@ -42,14 +42,14 @@ size_t partition(int *array, int left, int right, size_t size)
 			a++;
 			if (a != b)
 			{
-				swap(&array[a], &array[b]);
+				swap_t(&array[a], &array[b]);
 				print_array(array, size);
 			}
 		}
 	}
 	if (array[right] < array[a + 1])
 	{
-		swap(&array[a + 1], &array[right]);
+		swap_t(&array[a + 1], &array[right]);
 		print_array(array, size);
 	}
 	return (a + 1);

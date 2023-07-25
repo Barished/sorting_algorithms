@@ -1,13 +1,14 @@
 #include "sort.h"
 
 /**
- * _swap - Swaps two nodes of doubly linked list
+ * swap_c - Swaps two nodes of doubly linked list
  *
  * @node: node base to change
  * @list: double link list head
  *
+ * Return: No Return
  */
-void _swap(listint_t **node, listint_t **list)
+void swap_c(listint_t **node, listint_t **list)
 {
 	listint_t *tmp = *node, *tmp2, *tmp3;
 
@@ -40,6 +41,7 @@ void _swap(listint_t **node, listint_t **list)
  *
  * @list: head of list to be sortered (Double Linked List)
  *
+ * Return: No Return
  */
 void cocktail_sort_list(listint_t **list)
 {
@@ -58,7 +60,7 @@ void cocktail_sort_list(listint_t **list)
 			if (head->n > head->next->n)
 			{
 				aux = head;
-				_swap(&aux, list);
+				swap_c(&aux, list);
 				print_list(*list);
 				head = aux;
 			}
@@ -75,7 +77,7 @@ void cocktail_sort_list(listint_t **list)
 			if (head->n < head->prev->n)
 			{
 				aux = head->prev;
-				_swap(&aux, list);
+				swap_c(&aux, list);
 				print_list(*list);
 				head = aux->next;
 			}
