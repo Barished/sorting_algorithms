@@ -4,6 +4,7 @@
  * swap - swap one element for another
  * @a: first argument
  * @b: second argument
+ * Return: nothing
  */
 
 void swap(int *a, int *b)
