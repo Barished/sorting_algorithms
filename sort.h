@@ -49,6 +49,6 @@ void bitonicsort(int arr[], int low, int nelemnt, int order, int size);
 void _swap(int *array, int i, int j);
 void swap_c(listint_t **node, listint_t **list);
 void _merge(int *array, int *buff, int minL, int maxL, int minR, int maxR);
-
+void swap_b(int arr[], int item1, int item2, int order);
 
 #endif

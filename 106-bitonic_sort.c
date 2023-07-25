@@ -1,13 +1,13 @@
 #include "sort.h"
 #include <stdio.h>
 /**
- * _swap - change two values in ascending or descending order
+ * swap_b - change two values in ascending or descending order
  * @arr: array
  * @item1: item one
  * @item2: item two
  * @order: 1: ascending order, 0 descending order
  */
-void _swap(int arr[], int item1, int item2, int order)
+void swap_b(int arr[], int item1, int item2, int order)
 {
 	int temp;
 
@@ -33,7 +33,7 @@ void merge(int arr[], int low, int nelemnt, int order)
 	{
 		mid = nelemnt / 2;
 		for (i = low; i < low + mid; i++)
-			_swap(arr, i, i + mid, order);
+			swap_b(arr, i, i + mid, order);
 		merge(arr, low, mid, order);
 		merge(arr, low + mid, mid, order);
 	}
